@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myApp="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/disp"
+        android:icon="@drawable/action_icon"
+        android:title=""
+        myApp:showAsAction="always" />
+    <item android:id="@+id/abhivyakti"
+        android:title="Abhivyakti"
+        myApp:showAsAction="never" />
+    <item android:id="@+id/creative"
+        android:title="Creative Events"
+        myApp:showAsAction="never" />
+
+    <item android:id="@+id/lekhani"
+        android:title="Lekhani"
+       myApp:showAsAction="never" />
+    <item android:id="@+id/personality"
+        android:title="Personality"
+        myApp:showAsAction="never" />
+    <item android:id="@+id/quests"
+        android:title="Quests"
+        myApp:showAsAction="never" />
+    <item android:id="@+id/taal"
+        android:title="Taal"
+        myApp:showAsAction="never" />
+    <item android:id="@+id/talentwalk"
+        android:title="Talent Walk"
+        myApp:showAsAction="never" />
+    <item android:id="@+id/tarang"
+        android:title="Tarang"
+        myApp:showAsAction="never" />
+    <item android:id="@+id/troogle"
+        android:title="Troogle"
+        myApp:showAsAction="never" />
+</menu>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/homescreen_background" >
+    <ImageButton
+        android:id="@+id/btnRegister"
+        android:layout_width="200dip"
+        android:layout_height="90dip"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/register_button_in"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="130dip" />
+    <ImageButton
+        android:id="@+id/btnGallery"
+        android:layout_width="200dip"
+        android:layout_height="90dip"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gallery_button_ind"
+        android:layout_above="@id/btnRegister"
+        android:layout_alignLeft="@+id/btnRegister"
+        android:layout_alignStart="@+id/btnRegister" />
+    <ImageButton
+        android:id="@+id/btnSchedule"
+        android:layout_width="200dip"
+        android:layout_height="90dip"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/schedule_button_in"
+        android:layout_above="@id/btnGallery"
+        android:layout_alignLeft="@+id/btnRegister"
+        android:layout_alignStart="@+id/btnRegister"  />
+    <ImageButton
+        android:id="@+id/btnEvent"
+        android:layout_width="200dip"
+        android:layout_height="100dip"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/event_button_indictor"
+        android:layout_above="@id/btnSchedule"
+        android:layout_alignLeft="@+id/btnRegister"
+        android:layout_alignStart="@+id/btnRegister"
+        />
+    <ImageButton
+        android:id="@+id/whatsupButton"
+        android:layout_width="350dip"
+        android:layout_height="350dip"
+        android:background="@null"
+        android:layout_alignRight="@id/btnRegister"
+        android:scaleType="fitCenter"
+        android:src="@drawable/whatsup_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="180dip" />
+    <ImageButton
+        android:id="@+id/knowmoreButton"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/knowmore_button"
+        android:layout_alignBottom="@+id/whatsupButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:id="@+id/sponsorsButton"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sponsors"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

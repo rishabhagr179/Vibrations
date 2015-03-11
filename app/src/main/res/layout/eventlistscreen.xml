@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnTaal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="17dp"
+        android:text="Taal" />
+
+    <Button
+        android:id="@+id/btnTalentWalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnTaal"
+        android:layout_below="@+id/btnTaal"
+        android:text="Talent Walk" />
+
+    <Button
+        android:id="@+id/btnAbhivyakti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnTalentWalk"
+        android:layout_below="@+id/btnTalentWalk"
+        android:text="Abhivyakti" />
+
+    <Button
+        android:id="@+id/btnTarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAbhivyakti"
+        android:layout_below="@+id/btnAbhivyakti"
+        android:text="Tarang" />
+
+    <Button
+        android:id="@+id/btnLekhani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCreativeEvents"
+        android:layout_alignLeft="@+id/btnCreativeEvents"
+        android:text="Lekhani" />
+
+    <Button
+        android:id="@+id/btnPersonalityHunt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreativeEvents"
+        android:layout_marginLeft="150dp"
+        android:layout_toRightOf="@+id/btnTalentWalk"
+        android:text="Personality Hunt" />
+
+    <Button
+        android:id="@+id/btnCreativeEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTarang"
+        android:layout_alignLeft="@+id/btnPersonalityHunt"
+        android:text="Creative Events" />
+
+    <Button
+        android:id="@+id/btnQuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTaal"
+        android:layout_alignBottom="@+id/btnTaal"
+        android:layout_alignLeft="@+id/btnLekhani"
+        android:text="Quest" />
+
+</RelativeLayout>

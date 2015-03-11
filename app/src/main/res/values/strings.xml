@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vibrations</string>
+    <string name="action_settings">Settings</string>
+    <string name="taal">\"To dance is to fly and to unleash your dreams..</string>
+    <string name="Razzmatazz">Step in Sync..\n
+RULES:\n
+•	No. of participants per team: 5-12.\n
+•	Time limit: 5 min.\n
+•	Fusion of the songs is allowed.\n
+•	The song selection should not violate the decorum of the college\n
+•	Judgement will be done on the basis of costumes, song selection, choreography and coordination.\n
+•	Negative marking on exceeding time limit \n
+•	Finalists should submit their songs to coordinators.\n</string>
+    <string name="twototango">Feel the Beat\n
+RULES:\n
+•	Max. Time limit: 5 min.\n
+•	Fusion of the songs is allowed.\n
+•	The song selection should not violate the decorum of the college.\n
+•	Finalists should submit their songs in mp3 format to the coordinators(320 kbps)\n
+•	No. of participants: 2\n</string>
+    <string name="ghunghroo">Rewinding to the Origins..\n
+RULES:\n
+•	No. of participants per team: 7-12.\n
+•	Finalists should submit their songs in mp3 format to the Event comprises of elimination followed by finals.\n
+•	Time limit: 5min.\n</string>
+    <string name="footloose"> Shake a leg...\n
+
+RULES: \n
+
+•	Maximum time limit: 3 mins\n
+•	Songs to be submitted in mp3 format. \n
+•	No. of participants: 1\n</string>
+    <string name="talentwalk">Step and depict\n
+        RULES:\n
+
+•	No. of participants: 10-16.\n
+•	Backstage helpers: 3 (at most)\n
+•	Time limit: 5 minutes.\n
+•	Teams are expected to portray a theme through dress, dance and choreography.\n
+•	Teams will have to get their dresses and themes approved beforehand from concerned coordinator.\n
+•	Judgment will be based on creativity, originality, choreography and negative marking will be done on exceeding time limit\n</string>
+    <string name="abhivyakti">\"For when you act, we see a brand new you..\"</string>
+    <string name="stageplay">Lights Camera Drama\n
+        RULES:\n
+•	Maximum no. of members per team: 10(+2 helpers)\n
+•	Time limit: 10 min.\n
+•	Negative points on exceeding the time limit.\n
+•	Any form of vulgarity or wrong criticism will lead to disqualification.\n</string>
+    <string name="nukkadnatak">Taking it to the streets...\n
+RULES:\n
+•	No. of participants: 5-10\n
+•	Time limit: 10 min\n
+•	Judging Criteria: Theme addressed, crowd engagement, creativity, presentation.\n
+•	Vulgarity and personal remarks will not be entertained and will lead to disqualification.\n</string>
+    <string name="tarang">\"Revealing the mystery of life that resides in music..\"</string>
+    <string name="bitidol">Master of Pitch and Rhythm\n
+RULES:\n
+
+•	Time limit: 3 min.\n
+•	Negative marking will be there for exceeding the time limit.\n
+•	Finalists are required to bring the karaoke of their songs in mp3 format and submit it two days before the final event.\n
+•	No. of participants: 1\n
+Judgment criteria: Voice quality, Selection of song, crowd engagement and most importantly the SUR.\n</string>
+    <string name="sursangam">Tune in Together\n
+
+RULES:\n
+ •	Event comprises of elimination followed by finals.\n
+•	Participants have to perform a Hindi/English song of their choice(fusion allowed)\n
+•	Time limit: 4 min.\n
+•	Negative marking will be there for exceeding time limit.\n
+•	No. of participants: 2\n
+•	Finalists are required to bring the karaoke of their songs in mp3 format.\n
+    Judgment criteria: Choice of song, Overall performance, Versatility, Presentation.</string>
+    <string name="symphony">Hopping on the bandwagon...\n
+RULES:\n
+•	Event comprises of elimination followed by finals.\n
+•	No. of participants per team: 3-8.\n
+•	Participants should bring their own orchestra or any musical instruments.\n
+•	Time limit: 4 min.\n
+•	Negative marking for exceeding the time limit.\n
+•	Band performances are allowed.\n</string>
+    <string name="quest">Delving into the world of words, numbers and quizzes..</string>
+    <string name="entertainmentquiz">A quiz that evaluates your knowledge of the various aspects of the
+entertainment industry.\n
+
+Round1: Written Round: 30 mins.\n
+Round 2: On stage round, the details of which will be disclosed on the spot.\n</string>
+    <string name="incredibleindia">Knowledge though general but creditable. No obfuscation. No boredomit\'s all about keeping it simple and recalling. Let\s get into it.. Pick up your pens and put up a show in front of your mates..BINGO..!!\n
+RULES:\n
+•	A preliminary round will be held before the final round.\n
+•	Five teams will be chosen .Each team will consist of 2 participants each.\n
+•	Five rounds will be conducted during the final round.\n
+•	Rest of the rules will be disclosed on the spot.\n</string>
+    <string name="antakshri">	    All you bollywood fans and music lovers, the age old favourite, Antakshari is back!! With simple rules and interesting rounds!!!!
+\n
+RULES:-\n
+•	Number of participants: 2 per Team.\n
+•	6 teams will be selected on the basis of Prelims.\n
+•	Songs from Bollywood only are allowed.\n
+•	No repetition of songs will be allowed.\n
+•	Rules for the rounds for mains will be disclosed on the spot.\n</string>
+    <string name="wordstock">	    \n- There will be 2 rounds- Prelims and Finals.
+\n- Rules will be disclosed on the spot.
+\n- It has an individual participation.</string>
+    <string name="wordnerd">•	There will be 2 rounds- Prelims and Finals.\n
+•	Rules will be disclosed on the spot.\n
+•	No. of Participants: 2\n</string>
+    <string name="visionary">	   •	There will be 2 rounds- Prelims and Finals.\n
+•	Rules will be disclosed on the spot.\n
+•	It has an individual participation.\n
+
+•	It has an individual participation.\n</string>
+    <string name="figureout">	    Creative maths riddles and puzzle sheet requiring brain to be in discomfort due to extra effort on solving.
+\n
+RULES:\n
+
+•	Members per team: 2\n
+•	Event comprises of three rounds: prelims , quaternary, finals.\n
+•	Time limit: prelims- 40 mins(20 questions), quaternary-30 mins(10 questions), finals-20 mins(5 questions).\n
+•	No calculators or other helping materials allowed (sheets, log tables etc.)\n
+•	Elimination to be followed and completely depends upon discretion of coordinators of the event(cant be challenged in any case).\n
+•	Finals to be done in between four teams of two members each.\n</string>
+    <string name="lekani">"We grant you both the province and privilege to express yourself! So here you go.."</string>
+    <string name="crossswords">English  Hindi Debates\n
+        RULES:\n
+
+•	Time limit: 3+1=4 min (3 min speaking + 1 min interjection).\n
+•	Event comprises of elimination followed by finals.\n
+•	Topic for elimination round to be uploaded 2 days before. Keep checking website for details.\n
+•	Topic for finals to be given 2 days before the event.\n
+•	Negative marking will be there for exceeding the time limit.\n
+•	Judgment will be on the basis of content, oratory skills, presentation and body language.\n
+•	Criticism or comments of any kind on an individual are not allowed.\n</string>
+    <string name="admad">	    Ad-Mad required the participants to create:\n
+•	An ad\n
+•	A banner\n
+•	A slogan\n
+Around the given topic\n
+
+RULES:\n
+
+•	The participants would be given a collection of chits to choose from,
+which will contain their topics/ products.\n
+•	They will be given ten minutes to prepare and three minutes to present their ad .\n
+•	In the ten minutes they are supposed to produce - a banner, an
+advertisement (Which would entail enacting the advert) and a slogan.\n
+•	All of the above mentioned should be related to the product and
+presented in a well defined form.\n
+•	Marks would be rewarded depending upon each and every element of the entire ad.\n
+•	Creativity, skill, and innovation would be kept in mind while rewarding the marks.\n</string>
+    <string name="mockparliament">	    Live out your desire to personify/imitate the fountainheads of Indian politics in this fiery event.
+\n
+Rules:\n
+•	Each team will consist of 4 members.\n
+•	The topic of the session will be disclosed 24 hrs before the event.
+Usage of both Hindi and English languages is permitted.\n
+•	All questions, answers and views will be addressed to the Sabha
+Adhyaksh (Speaker).\n
+\n
+Rounds:\n
+
+1.	In the first round, the team will be required to present its views
+on the given topic.\n
+2.	Time limit: Maximum 2 mins per member.\n
+
+3.	In the second round, the teams will cross question each other over
+the topic. Each team can question any other for a maximum of two minutes.\n
+4.	In the third round, the audience as well as the judges will cross
+question the teams.\n
+
+        Evaluation will depend on content, presentation and conduct of the
+team.\n
+        In case of any dispute, the decision of judges will be final and
+binding. Judges will award points on the basis of content, language and
+ presentation.\n
+        The detailed information of the rounds as well as their rules will
+be provided on the spot.\n</string>
+    <string name="extempore">	    This is not for the parrots but for the eagles who do not prepare in advance for the hunt.\n
+
+RULES:\n
+
+•	The contestants would be given a collection of chits to choose from, which will contain their topic\n
+•	They will be given five minutes to prepare and one and a half minute to speak on their given topic.\n
+•	No paper or pen would be allowed during the five minutes of thinking time\n
+•	The participants would be judged on the basis of their content, the confidence, Diction, Voice modulation and the language usage.\n
+•	Swaying away from the topic would result in penalization.\n</string>
+    <string name="voiceaversa">	    An unadulterated flow of saga, satire and fun with a message beautifully woven into words...Let the poet in you come out and vibrate the environment
+\n
+RULES:\n
+
+•	Time limit: 3 mins\n
+•	Vulgarity will lead to disqualification.\n
+•	Participants can come up with self-written or compiled poem, but self-written ones will be preferred.\n
+•	Judging criteria: Originality, topic addressed in the poem, oration, presentation.\n
+•	There will be a warning bell after 2:30 minutes.\n
+•	-1 will be deducted after every 10 sec after the completion of time.\n</string>
+    <string name="pictionary">	   A creative writing event, where all participants will be required to submit a written piece and drawing inspiration from a mixed bag of pictures.
+\n
+RULES:\n
+
+•	Some pictures will be shown one by one for 5 sec, and participant will be given next 30 min. to write about it.\n
+•	No inventory material will be allowed.\n
+•	Writing medium may be Hindi or English.\n
+•	Judging criteria will be creativity, perceiving power and literary skills.\n</string>
+    <string name="creativeevents">	    \"Where your strokes, colours and imagination define you..\"	</string>
+    <string name="scrapper">	    Ctrl X + Ctrl V + Creativity = your own masterpiece..
+\nRULES:
+\n• Participants are required to make funny headlines with the newspaper scraps using the words only.
+\n• No. of participants per team: 2.
+\n• Time limit: 60 min
+\n• Newspapers will be provided to the teams.
+\n• Teams have to bring their own adhesive, scissors etc.
+\n• Headings should not contain any vulgarity or harsh criticism.
+\n Each team will be evaluated on the basis of creativity, humour, use of resources and overall presentation.</string>
+    <string name="craftacover">Who doesn’t wish to be on the cover page, to design that is an art and to portray is a blessing.. This time on..It’s even more Exciting…more pragmatic..More competitive..Don’t dare to miss the fun! CRAWL OR RUN but reach here to reward the hidden talent!!
+\nRULES:
+\n• Sheet size can be chosen as per convenience.
+\n• MAX no. of participants-3
+\n• Time limit-1.5 hour.
+\n• Decorative materials can be used that justify the cover and accordingly judgment will be done.
+\n• Magazine theme to be disclosed on website a day before.
+\n• Along with designs, relevant quotes can be incorporated and surely would be a reason to fetch extra points.
+\n• Materials required to be brought by the team itself. Nothing will be provided by the organizers.
+\n• On the spot registration allowed.</string>
+    <string name="indradhanush">Who doesn\'t like to play with colours??? But what if design a beautiful and traditional rangoli??? Let’s swim in the rivers of colours flowing through whole India.
+\nRULES:
+\n• Members per team: 2.
+\n• Time limit: 1 hr.
+\n• Rangoli should not be larger than 1m x 1m.
+\n• Teams should bring their own rangoli colors.
+\n• No other material like pulses, grains, flowers, sparkles etc. can be used to make rangoli.
+\n• Decorative items like diyas, mirrors etc cannot be used.
+\n• Judgment will be based on theme, neatness, design and origin.</string>
+    <string name="snapshots">	    Clicking is going to be fun and a lot more cooler this time!!! Just pick your digital cameras and get back to us with a few pictures through the fest.
+\nRULES:
+\n• Use of digital cameras and cell phones are allowed.
+\n• Choose 2 of the best pictures you’ve clicked during 22nd 23rd and 24th January 2014.
+\n• Submit by uploading on the Facebook page of Vibrations.  Photograph should be original, else it would be disqualified.  The photographs should be submitted to the event coordinators on 24th January 2014 by 5pm.</string>
+    <string name="tshirtpainting">	    This event provides you with an opportunity to be your own designer bring out the Van Gogh or Picasso within you and unleash your creativity!! Let your imagination cross all bounds in this colorful fest!
+\nRULES:
+\n• Team must comprise of at most 2 participants.
+\n• Materials provided will be a White T-shirt.
+\n• The duration of the completion will be 1 hour.
+\n• Students have to bring their own colors and drawing items.
+\n• Theme will be disclosed on website one day before the event.</string>
+    <string name="portray">RULES:
+	    \n• Time: 1 hr.
+	    \n• Size of sheet to be used: A4. The sheets will be provided by us.
+	    \n• Theme to be given on the spot (BASIC DOMAIN TO BE DECLARED BEFORE).
+	    \n• Only pencil sketching is allowed, no coloring.
+	    \n• Judging criteria: Neatness, Creativity, Presentation and visualization.
+	    \n• Materials to be brought in by the participants (eg. Pencils 2B, 4B etc.)</string>
+    <string name="mosaic">	    Just think innovatively..cut..paste..bits of paper and exhibit the theme on a collage..
+\nRULES:
+\n• Maximum participants: 4 per team
+\n• Time limit: 1 hr
+\n• Materials should be brought by the participants
+\n• Sheet size : A1
+\n• On the spot registration allowed
+\n• Theme to be disclosed on website a day before</string>
+    <string name="copycat">	    Ever thought of getting rewarded for copying??? Sounds interesting na?? Yeah..You win here for copying the best!!!
+\nRULES:
+\n• No of participants: 2 per team
+\n• On the spot registration allowed
+\n• Time limit (20 + 20) = 40 min
+\n• A drawing will be shown to 1st member and he/she needs to copy it. Now 2nd member will be shown drawings made by 1st participant, he/she needs to copy that. Drawing of 2nd member will be matched with original piece, which ever matches the best will be the winner.
+\n• Sheets will be provided by us.</string>
+    <string name="glueit">	    "Cheap jewellery is worse than no jewellery at all, and there are very few things in life that are worse than no jewellery at all."\n We give you a platform, to think, to create and to let the viewers spell bound!!!
+\nRULES:
+\n• Max. participants per team: 2
+\n• Time limit: 1 hour.
+\n• Teams will have to bring the required material like glue, scissors, colours, beads etc, themselves.
+\n• Thermocol will be provided to the participants which must be the only base for jewellery designing.
+\n• If found, team members have brought the final article or used any other material than thermocol, the team will be disqualified.
+\n• There is limited number of entries (first come first serve basis) with online registration.
+\n• Judgement will be based on the theme, utility, presentation, stability of the article and addition of new item and its usage.</string>
+    <string name="splash">	    Bored of using pencil colours, brushes \'n pens??? Let\’s get a little kiddish…it\’s time to get dirty…it\’s time to play with colours…chill ya..surf excel hai na… ;)
+\nIt\’s time to splash yourselves in the world of colours..dip fingers into colours and paint your imagination…
+\nRULES:
+\n• Individual participation.
+\n• Participants will have to draw without using any drawing aids (pencil, brush etc).
+\n• They will have to paint using only hand strokes.
+\n• Colours etc. should be arranged by participants.
+\n• Time limit: 1 hr.
+\n• Theme to be given a day before.
+\n• Participants will be given some accessories to use in painting.(use of which must be prominently visible)
+\nOne more important thing SPLASH doesn’t mean painting hands on the sheet so keep it in mind and paint something innovative.</string>
+    <string name="eggpainting">	    RULES:
+\n• A team of two participants can participate in the contest.
+\n• Time limit: 1 hour.
+\n• The painting can be done with egg shells in any state or form.
+\n• Marks will be allotted on usage of egg shells, creativity, and cleanliness.
+\n• The participants are required to bring their own equipments, that is, a plate (a base), paints, brushes and egg shells. Violation of the rule will lead to disqualification.
+\n• The egg shells should not be previously painted in any way.</string>
+    <string name="personalityhunt">	    \"Do you have it all?-Wits, oomph and looks..\"
+\nRULES:
+\nThe event will be divided evenly over the three days of the Fest. Each day will have one round after which eliminations will take place. There will be 3 rounds in all.
+\n• Round 1: A fun quiz with some puzzles, riddles and basic day to day questions.
+\n• Round 2: This round will in itself have 2 sub-rounds.
+\n\t• Photo Booth: You will be given an environment, a few props, a photographer and one minute. You just have to get 3 pictures clicked! (The marking will be on the basis of the creativity you show.)
+\n\t• Talent Show: You have 30 second on the stage. You have to entertain the crowd. Show your talent, crack a joke, get a prop do some mimicry, anything!
+\n• Round 3: This will be an on stage event. You have to walk the ramp and answer a question that the panel puts up for you.</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_whats_up_dialog">WhatsUpDialog</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_know_more_dialog">KnowMoreDialog</string>
+    <string name="bandperformance1">A band performance of Pirates-of-Soul</string>
+    <string name="bandperformance2">Band performances of
+        \nAkshya Patra- \'The Classical Rock\' and
+        \nRudraksh Band	</string>
+    <string name="title_activity_event_details2">EventDetails2</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="title_activity_event_details1">EventDetails1</string>
+    <string name="title_activity_event__details">Event_Details</string>
+    <string name="na">Event Details not Available Keep Checking For Updates......</string>
+
+    <string-array name="cl_name">
+        <item>---Select One---</item>
+        <item>BIT, Jaipur</item>
+        <item>Aayojan school of Architecture</item>
+        <item>Agarwal College</item>
+        <item>AMITY</item>
+        <item>APEX Institute of Management And Science</item>
+        <item>ARCH Academy of Fashion, Arts And Design</item>
+        <item>Arya College of Engineering And Information Technology</item>
+        <item>Banasthali Vidyapith</item>
+        <item>Commerce College</item>
+        <item>Global Institute of Technology</item>
+        <item>Gyan Vihar School of Engineering And Technology</item>
+        <item>Indian Institute of Craft And Design - Jaipur</item>
+        <item>International College for Girls</item>
+        <item>International Institute of Fashion Technology</item>
+        <item>International School(Institutes) Of Informatics &amp; Management</item>
+        <item>Jagannath Gupta Institute Of Engineering &amp; Technology</item>
+        <item>Jaipur Engineering College</item>
+        <item>Jaipur Engineering College &amp; Research Centre</item>
+        <item>Kanodia Girls College</item>
+        <item>Kautilya Institute Of Technology &amp; Engineering &amp; School Of Management</item>
+        <item>LNMIIT</item>
+        <item>Maharishi Arvind Institute of Engineering &amp; Technology</item>
+        <item>Mahatma Gandhi Institute of Applied Sciences</item>
+        <item>Malaviya National Institute Of Technology Or Malaviya Regional Engineering College</item>
+        <item>MANIPAL</item>
+        <item>Poornima College Of Engineering</item>
+        <item>Regional College For Education Research And Technology</item>
+        <item>S. S. Jain Subodh P.G. College</item>
+        <item>S.M.S. Medical College</item>
+        <item>Seedling Academy Of Design Tech. &amp; Management</item>
+        <item>Shankara Institute of Technology</item>
+        <item>Stani Memorial College of Engineering And Technology</item>
+        <item>St Xaviers College</item>
+        <item>Swami Keshvanand Institute Of Technology Management And Gramothan</item>
+        <item>Tagore Institute of Training And Research</item>
+        <item>University Maharani\'s College</item>
+        <item>Vivekananda Institute of Technology</item>
+        <item>Yagyavalkya Institute of Technology</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="event_name">
+        <item>---Select One---</item>
+        <item>Stage Play</item>
+        <item>Nukkad Natak</item>
+        <item>Voice-A-Verse</item>
+        <item>Egg Painting</item>
+        <item>Indradhanush</item>
+        <item>Portray</item>
+        <item>Comic Script</item>
+        <item>Copy Cats</item>
+        <item>Splash</item>
+        <item>Mock Parliament</item>
+        <item>Word Wars</item>
+        <item>ACT-O-PROP</item>
+        <item>Spin-A-Yarn</item>
+        <item>Entertainment Quiz</item>
+        <item>Incredible India</item>
+        <item>Antakshari</item>
+        <item>Word Nerds</item>
+        <item>Grid Lock</item>
+        <item>Carta Logy</item>
+        <item>Razzmatazz</item>
+        <item>Two-to-Tango</item>
+        <item>Ghungroo</item>
+        <item>Footloose</item>
+        <item>Talent Walk</item>
+        <item>BIT Idol</item>
+        <item>Sur Sangam</item>
+        <item>Symphony</item>
+    </string-array>
+
+    <string name="quiddich">You must have dreamed of flying on the broom like Harry Potter or fighting down Slytherin in the Quidditch. Well here, you get to play a replica of that game just devoid of the flying factor.\n
+RULES:\n
+•	Teams of 4 required\n
+•	Every participant has to hold the broom as instructed by Madam Rolanda Hooch.\n
+•	Eight winning teams from the previous event will play against one another to qualify for semi-finals and then finals.\n</string>
+    <string name="treasurehunt">Watched Finding Fanny? Like A searches for Fanny, getting the help of B, C, D, and E in the way, you have to search for Fanny with the various kind of clues you\'ll find on the way.\n
+RULES:\n
+•	Teams of 4 required, including a girl\n
+
+Rest rules will be disclosed on spot.\n</string>
+    <string name="goofie">Google + Selfie = Goofie, and this actually will be goofy.\n
+Brainstorm what this can be, but RULES will be disclosed on spot.\n</string>
+    <string name="foosball">Seen F.R.I.E.N.D.S? Played Foosball before?\n
+You juggle the players to dodge the ball on the table, now you gotta juggle yourself on the ground.\n
+RULES:\n
+•	Teams of 5 required (if 5 not available, we will team you up with somebody)\n
+•	Three rows of 2-2-1 player each\n
+•	Players ought to move in their own rows\n
+•	The winner team scores 5 goals first\n
+•	Winner teams will qualify for the game on next day.\n</string>
+    <string name="title_activity_sponsor">Sponsor</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
