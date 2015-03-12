@@ -32,7 +32,7 @@
             android:ems="10"
             android:padding="10dip"
             android:gravity="center|left"
-            android:text="Vibrations&apos;15 Developer\n\nRishabh Agarwal (CSE'13)\n\nFor any feedback or suggestions about the App, feel free to contact\n\n"
+            android:text="Vibrations&apos;15 Developer\n\nRishabh Agarwal (CSE'13)\n\nGraphics By:\n\nDevang Chajjed (BCA 14)\n\nFor any feedback or suggestions about the App, feel free to contact\n\n"
             android:textColor="#000"
             android:textSize="15sp" />
 
