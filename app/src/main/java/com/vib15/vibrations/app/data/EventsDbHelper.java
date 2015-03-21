@@ -34,9 +34,9 @@ public class EventsDbHelper extends SQLiteOpenHelper {
     private final String COLUMN_END_TIME = "endTime";
     private final String COLUMN_IMAGEID = "imageid";
     private final String COLUMN_ALARM_STATUS = "alarm";
-    private static final String TABLE_NAME_GALLERY = "images";
-    private static final String COLUMN_ID_GALLERY="id";
-    private static final String COLUMN_IMAGE_GALLERY="image";
+    public static final String TABLE_NAME_GALLERY = EventsContract.GalleryEntry.TABLE_NAME;
+    private static final String COLUMN_ID_GALLERY= EventsContract.GalleryEntry._ID;
+    private static final String COLUMN_IMAGE_GALLERY= EventsContract.GalleryEntry.COLUMN_IMAGE;
     private final String TABLE_NAME_NEWS = "latestnews";
     private final String COLUMN_NEWS = "new";
     private final String TABLE_NAME_UPDATE = "upd";
@@ -67,7 +67,7 @@ public class EventsDbHelper extends SQLiteOpenHelper {
     }
     public int getNo(){
         SQLiteDatabase database = (new EventsDbHelper(mContext)).getWritableDatabase();
-        Cursor c = database.rawQuery("select * from "+SponsorContract.SponsorEntry.TABLE_NAME,null);
+        Cursor c = database.rawQuery("select * from "+ EventsContract.SponsorEntry.TABLE_NAME,null);
         c.moveToFirst();
         int i=1;
         while(c.moveToNext())
@@ -159,7 +159,7 @@ public class EventsDbHelper extends SQLiteOpenHelper {
         ContentValues cv=new ContentValues();
         cv.put(COLUMN_ID_GALLERY, id);
         cv.put(COLUMN_IMAGE_GALLERY, imageInByte);
-        database.insert(TABLE_NAME_GALLERY, null, cv);
+        mContext.getContentResolver().insert(EventsContract.GalleryEntry.CONTENT_URI,cv);
     }
 
     public Cursor getAllGalleryRecords()
@@ -203,11 +203,11 @@ public class EventsDbHelper extends SQLiteOpenHelper {
         db.execSQL("create table " + TABLE_NAME_GALLERY + "( " + COLUMN_ID_GALLERY
                 + " NUMBER PRIMARY KEY, " + COLUMN_IMAGE_GALLERY + " BLOB)");
 
-        final String SQL_CREATE_SPONSOR_TABLE="CREATE TABLE "+ SponsorContract.SponsorEntry.TABLE_NAME+" ("
-                +SponsorContract.SponsorEntry._ID+" INTEGER PRIMARY KEY, "
-                +SponsorContract.SponsorEntry.COLUMN_NAME+" TEXT NOT NULL, "
-                +SponsorContract.SponsorEntry.COLUMN_TYPE+" TEXT NOT NULL, "
-                +SponsorContract.SponsorEntry.COLUMN_LOGO+" INTEGER );";
+        final String SQL_CREATE_SPONSOR_TABLE="CREATE TABLE "+ EventsContract.SponsorEntry.TABLE_NAME+" ("
+                + EventsContract.SponsorEntry._ID+" INTEGER PRIMARY KEY, "
+                + EventsContract.SponsorEntry.COLUMN_NAME+" TEXT NOT NULL, "
+                + EventsContract.SponsorEntry.COLUMN_TYPE+" TEXT NOT NULL, "
+                + EventsContract.SponsorEntry.COLUMN_LOGO+" INTEGER );";
         db.execSQL(SQL_CREATE_SPONSOR_TABLE);
         Log.v("SponsorDB:","Table Created");
 
@@ -466,57 +466,18 @@ public class EventsDbHelper extends SQLiteOpenHelper {
                 + R.drawable.talent_walk + ", 0)");
         db.execSQL("create table " + TABLE_NAME_DATE + "( "+COLUMN_DATE_DAY+" Number)");
         db.execSQL("INSERT INTO "+ TABLE_NAME_DATE +" values(9)");
-        db.execSQL("INSERT INTO "+SponsorContract.SponsorEntry.TABLE_NAME+" VALUES( 0,\'Cafe Heart\',\'Beverage Partner\',"+ R.drawable.sponsors1+");");
-        db.execSQL("INSERT INTO "+SponsorContract.SponsorEntry.TABLE_NAME+" VALUES( 1,\'Endeavour\',\'Technical Education Partner\',"+R.drawable.sponsors2+");");
-        db.execSQL("INSERT INTO "+SponsorContract.SponsorEntry.TABLE_NAME+" VALUES( 2,\'Lailas\',\'Fashion Partner\',"+R.drawable.sponsors3+");");
-        db.execSQL("INSERT INTO "+SponsorContract.SponsorEntry.TABLE_NAME+" VALUES( 3,\'Ind it\',\'Food Partner\',"+R.drawable.sponsors4+");");
-        db.execSQL("INSERT INTO "+SponsorContract.SponsorEntry.TABLE_NAME+" VALUES( 4,\'Pink Square\',\'Mall Partner\',"+R.drawable.sponsors5+");");
-        db.execSQL("INSERT INTO "+SponsorContract.SponsorEntry.TABLE_NAME+" VALUES( 5,\'Tatoo Baba\',\'Tatoo Partner\',"+R.drawable.sponsors6+");");
-        db.execSQL("INSERT INTO "+SponsorContract.SponsorEntry.TABLE_NAME+" VALUES( 6,\'Udaan\',\'NGO Partner\',"+R.drawable.sponsors7+");");
-        /*ContentValues cv = new ContentValues();
-        cv.put(SponsorContract.SponsorEntry.COLUMN_NAME,"Cafe Heart");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_TYPE,"Beverage Partner");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_LOGO, R.drawable.sponsors1);
-        mContext.getContentResolver().insert(SponsorContract.SponsorEntry.CONTENT_URI,cv);
-        cv.clear();*/
-         /*
-
-        cv.put(SponsorContract.SponsorEntry.COLUMN_NAME,"Endeavour");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_TYPE,"Technical Education Partner");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_LOGO, R.drawable.sponsors2);
-        mContext.getContentResolver().insert(SponsorContract.SponsorEntry.CONTENT_URI,cv);
-        cv.clear();
-        cv.put(SponsorContract.SponsorEntry.COLUMN_NAME,"Laila\'s");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_TYPE,"Fashion Partner");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_LOGO, R.drawable.sponsors3);
-        mContext.getContentResolver().insert(SponsorContract.SponsorEntry.CONTENT_URI,cv);
-        cv.clear();
-        cv.put(SponsorContract.SponsorEntry.COLUMN_NAME,"Ind it");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_TYPE,"Food Partner");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_LOGO, R.drawable.sponsors4);
-        mContext.getContentResolver().insert(SponsorContract.SponsorEntry.CONTENT_URI,cv);
-        cv.clear();
-        cv.put(SponsorContract.SponsorEntry.COLUMN_NAME,"Pink Square");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_TYPE,"Mall Partner");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_LOGO, R.drawable.sponsors5);
-        mContext.getContentResolver().insert(SponsorContract.SponsorEntry.CONTENT_URI,cv);
-        cv.clear();
-        cv.put(SponsorContract.SponsorEntry.COLUMN_NAME,"Tatoo Baba");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_TYPE,"Tatoo Partner");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_LOGO, R.drawable.sponsors6);
-        mContext.getContentResolver().insert(SponsorContract.SponsorEntry.CONTENT_URI,cv);
-        cv.clear();
-        cv.put(SponsorContract.SponsorEntry.COLUMN_NAME,"Udaan");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_TYPE,"NGO Partner");
-        cv.put(SponsorContract.SponsorEntry.COLUMN_LOGO, R.drawable.sponsors7);
-        mContext.getContentResolver().insert(SponsorContract.SponsorEntry.CONTENT_URI,cv);
-        cv.clear();*/
+        db.execSQL("INSERT INTO "+ EventsContract.SponsorEntry.TABLE_NAME+" VALUES( 0,\'Cafe Heart\',\'Beverage Partner\',"+ R.drawable.sponsors1+");");
+        db.execSQL("INSERT INTO "+ EventsContract.SponsorEntry.TABLE_NAME+" VALUES( 1,\'Endeavour\',\'Technical Education Partner\',"+R.drawable.sponsors2+");");
+        db.execSQL("INSERT INTO "+ EventsContract.SponsorEntry.TABLE_NAME+" VALUES( 2,\'Lailas\',\'Fashion Partner\',"+R.drawable.sponsors3+");");
+        db.execSQL("INSERT INTO "+ EventsContract.SponsorEntry.TABLE_NAME+" VALUES( 3,\'Ind it\',\'Food Partner\',"+R.drawable.sponsors4+");");
+        db.execSQL("INSERT INTO "+ EventsContract.SponsorEntry.TABLE_NAME+" VALUES( 4,\'Pink Square\',\'Mall Partner\',"+R.drawable.sponsors5+");");
+        db.execSQL("INSERT INTO "+ EventsContract.SponsorEntry.TABLE_NAME+" VALUES( 5,\'Tatoo Baba\',\'Tatoo Partner\',"+R.drawable.sponsors6+");");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_NEWS);
-        db.execSQL("DROP TABLE IF EXISTS " + SponsorContract.SponsorEntry.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + EventsContract.SponsorEntry.TABLE_NAME);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_DATE);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_DATE);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_GALLERY);

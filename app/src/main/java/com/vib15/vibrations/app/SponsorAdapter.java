@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.vib15.vibrations.app.data.SponsorContract;
+import com.vib15.vibrations.app.data.EventsContract;
 
 
 /**
@@ -43,8 +43,8 @@ public class SponsorAdapter extends CursorAdapter {
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
         ViewHolder viewHolder = (ViewHolder) view.getTag();
-        viewHolder.descriptionView.setText(cursor.getString(cursor.getColumnIndex(SponsorContract.SponsorEntry.COLUMN_TYPE)));
-        viewHolder.titleView.setText(cursor.getString(cursor.getColumnIndex(SponsorContract.SponsorEntry.COLUMN_NAME)));
-        viewHolder.iconView.setImageResource(cursor.getInt(cursor.getColumnIndex(SponsorContract.SponsorEntry.COLUMN_LOGO)));
+        viewHolder.descriptionView.setText(cursor.getString(cursor.getColumnIndex(EventsContract.SponsorEntry.COLUMN_TYPE)));
+        viewHolder.titleView.setText(cursor.getString(cursor.getColumnIndex(EventsContract.SponsorEntry.COLUMN_NAME)));
+        viewHolder.iconView.setImageResource(cursor.getInt(cursor.getColumnIndex(EventsContract.SponsorEntry.COLUMN_LOGO)));
     }
 }

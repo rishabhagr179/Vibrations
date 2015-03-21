@@ -61,7 +61,7 @@
                 android:value=".HomeScreen" />
         </activity>
         <provider
-            android:name=".data.SponsorProvider"
+            android:name=".data.EventsProvider"
             android:authorities="com.vib15.vibrations.app"
             android:exported="false"
             android:syncable="true"/>

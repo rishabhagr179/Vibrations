@@ -15,8 +15,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.vib15.vibrations.app.data.EventsContract;
 import com.vib15.vibrations.app.data.EventsDbHelper;
-import com.vib15.vibrations.app.data.SponsorContract;
 
 /**
  * A simple {@link android.support.v4.app.Fragment} subclass.
@@ -40,10 +40,10 @@ public class SponsorFragment extends Fragment implements LoaderManager.LoaderCal
     private int mPosition = ListView.INVALID_POSITION;
     private static final String SELECTED_KEY = "selected_position";
     private static final String[] SPONSOR_COLUMNS = {
-            SponsorContract.SponsorEntry._ID,
-            SponsorContract.SponsorEntry.COLUMN_NAME,
-            SponsorContract.SponsorEntry.COLUMN_TYPE,
-            SponsorContract.SponsorEntry.COLUMN_LOGO
+            EventsContract.SponsorEntry._ID,
+            EventsContract.SponsorEntry.COLUMN_NAME,
+            EventsContract.SponsorEntry.COLUMN_TYPE,
+            EventsContract.SponsorEntry.COLUMN_LOGO
     };
     static final int COL_ID = 0;
     static final int COL_NAME = 1;
@@ -104,14 +104,14 @@ public class SponsorFragment extends Fragment implements LoaderManager.LoaderCal
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Cursor c = getActivity().getContentResolver().query(SponsorContract.SponsorEntry.CONTENT_URI,
-                        new String[]{SponsorContract.SponsorEntry.COLUMN_LOGO,SponsorContract.SponsorEntry.COLUMN_NAME},
-                        SponsorContract.SponsorEntry._ID+" = ?",
+                Cursor c = getActivity().getContentResolver().query(EventsContract.SponsorEntry.CONTENT_URI,
+                        new String[]{EventsContract.SponsorEntry.COLUMN_LOGO, EventsContract.SponsorEntry.COLUMN_NAME},
+                        EventsContract.SponsorEntry._ID+" = ?",
                         new String[]{Integer.toString(position)},null);
                 c.moveToFirst();
                 mPosition=position;
-                ((Callback) getActivity()).onItemSelected(c.getInt(c.getColumnIndex(SponsorContract.SponsorEntry.COLUMN_LOGO))
-                        ,c.getString(c.getColumnIndex(SponsorContract.SponsorEntry.COLUMN_NAME)));
+                ((Callback) getActivity()).onItemSelected(c.getInt(c.getColumnIndex(EventsContract.SponsorEntry.COLUMN_LOGO))
+                        ,c.getString(c.getColumnIndex(EventsContract.SponsorEntry.COLUMN_NAME)));
             }
         });
         if (savedInstanceState != null && savedInstanceState.containsKey(SELECTED_KEY)) {
@@ -129,9 +129,9 @@ public class SponsorFragment extends Fragment implements LoaderManager.LoaderCal
     }
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-        String sortOrder = SponsorContract.SponsorEntry._ID + " ASC";
+        String sortOrder = EventsContract.SponsorEntry._ID + " ASC";
         return new CursorLoader(getActivity(),
-                SponsorContract.SponsorEntry.CONTENT_URI,
+                EventsContract.SponsorEntry.CONTENT_URI,
                 SPONSOR_COLUMNS,
                 null,
                 null,
