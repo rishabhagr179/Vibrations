@@ -117,7 +117,7 @@ ADDED from AndroidManifest.xml:54:9
 		ADDED from AndroidManifest.xml:58:13
 	android:name
 		ADDED from AndroidManifest.xml:55:13
-provider#com.vib15.vibrations.app.data.SponsorProvider
+provider#com.vib15.vibrations.app.data.EventsProvider
 ADDED from AndroidManifest.xml:63:9
 	android:authorities
 		ADDED from AndroidManifest.xml:65:13
