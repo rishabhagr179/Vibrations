@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.util.Log;
+
 import com.vib15.vibrations.app.R;
 
 import java.io.ByteArrayInputStream;
@@ -209,7 +209,6 @@ public class EventsDbHelper extends SQLiteOpenHelper {
                 + EventsContract.SponsorEntry.COLUMN_TYPE+" TEXT NOT NULL, "
                 + EventsContract.SponsorEntry.COLUMN_LOGO+" INTEGER );";
         db.execSQL(SQL_CREATE_SPONSOR_TABLE);
-        Log.v("SponsorDB:","Table Created");
 
         db.execSQL("create table " + TABLE_NAME_EVENTS + "( " + COLUMN_ID
                 + " NUMBER PRIMARY KEY, " + COLUMN_NAME + " TEXT(30), "

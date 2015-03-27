@@ -42,14 +42,9 @@ public class HomeScreen extends FragmentActivity {
 		ImageButton eventBtn = (ImageButton) findViewById(R.id.btnEvent);
 		eventBtn.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
-				/*Intent myIntent = new Intent(view.getContext(),
-						EventDetails.class);
-				startActivityForResult(myIntent, 0);*/
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(HomeScreen.this);
-
                 // set title
                 alertDialogBuilder.setTitle("Events");
-
                 // set dialog message
                 alertDialogBuilder
                         .setMessage("Click yes to update!")
