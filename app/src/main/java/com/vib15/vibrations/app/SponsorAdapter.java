@@ -6,7 +6,6 @@ import android.support.v4.widget.CursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.vib15.vibrations.app.data.EventsContract;
@@ -20,12 +19,10 @@ public class SponsorAdapter extends CursorAdapter {
         super(context, c, flags);
     }
     public static class ViewHolder {
-        public final ImageView iconView;
         public final TextView titleView;
         public final TextView descriptionView;
 
         public ViewHolder(View view) {
-            iconView = (ImageView) view.findViewById(R.id.list_icon);
             titleView = (TextView) view.findViewById(R.id.list_title);
             descriptionView = (TextView) view.findViewById(R.id.list_desc);
 
@@ -45,6 +42,5 @@ public class SponsorAdapter extends CursorAdapter {
         ViewHolder viewHolder = (ViewHolder) view.getTag();
         viewHolder.descriptionView.setText(cursor.getString(cursor.getColumnIndex(EventsContract.SponsorEntry.COLUMN_TYPE)));
         viewHolder.titleView.setText(cursor.getString(cursor.getColumnIndex(EventsContract.SponsorEntry.COLUMN_NAME)));
-        viewHolder.iconView.setImageResource(cursor.getInt(cursor.getColumnIndex(EventsContract.SponsorEntry.COLUMN_LOGO)));
     }
 }

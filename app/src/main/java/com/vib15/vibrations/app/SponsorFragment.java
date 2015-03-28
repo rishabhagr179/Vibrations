@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -31,7 +30,7 @@ public class SponsorFragment extends Fragment implements LoaderManager.LoaderCal
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    public ImageView iView;
+
     // TODO: Rename and change types of parameters
     private static final int SPONSOR_LOADER = 0;
     private SponsorAdapter mSponsorAdapter;
@@ -80,7 +79,7 @@ public class SponsorFragment extends Fragment implements LoaderManager.LoaderCal
         return fragment;
     }
     public interface Callback {
-        public void onItemSelected(int resId,String name);
+        public void onItemSelected(String name);
     }
     public SponsorFragment() {
         // Required empty public constructor
@@ -110,8 +109,7 @@ public class SponsorFragment extends Fragment implements LoaderManager.LoaderCal
                         new String[]{Integer.toString(position)},null);
                 c.moveToFirst();
                 mPosition=position;
-                ((Callback) getActivity()).onItemSelected(c.getInt(c.getColumnIndex(EventsContract.SponsorEntry.COLUMN_LOGO))
-                        ,c.getString(c.getColumnIndex(EventsContract.SponsorEntry.COLUMN_NAME)));
+                ((Callback) getActivity()).onItemSelected(c.getString(c.getColumnIndex(EventsContract.SponsorEntry.COLUMN_NAME)));
             }
         });
         if (savedInstanceState != null && savedInstanceState.containsKey(SELECTED_KEY)) {

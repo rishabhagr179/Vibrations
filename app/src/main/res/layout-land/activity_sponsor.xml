@@ -9,10 +9,18 @@
         android:layout_height="match_parent"
         android:id="@+id/container"
         android:layout_weight="1"/>
-    <ImageView
-        android:id="@+id/sponsorImg"
-        android:src="@drawable/sponsors1"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+    <TextView
+        android:id="@+id/sponsorHead"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_weight="1"/>
+        android:gravity="center"
+        android:text="Sponsor"
+        android:textSize="60dp"
+        />
+    </ScrollView>
     </LinearLayout>

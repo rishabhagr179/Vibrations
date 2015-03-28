@@ -3,12 +3,19 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.vib15.vibrationsapp.Sponsor" tools:ignore="MergeRootFrame" >
-    <ImageView
-        android:id="@+id/sponsorImg"
-        android:src="@drawable/sponsors1"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+    <TextView
+        android:id="@+id/sponsorHead"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_weight="1.5"/>
+        android:gravity="center"
+        android:text="Sponsor"
+        android:textSize="80dp"
+        />
+    </ScrollView>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

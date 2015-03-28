@@ -4,23 +4,23 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class Sponsor extends ActionBarActivity implements SponsorFragment.Callback{
     SponsorFragment sf;
-    ImageView iv;
-    static int resID=R.drawable.sponsors1;
-    private static String SELECTED_IMAGE="img";
+    private static String SELECTED_TAG="tab";
+    private static String name = "";
+    TextView iv;
     @Override
-    public void onItemSelected(int resId,String name) {
-            resID=resId;
-            iv.setImageResource(resId);
+    public void onItemSelected(String name) {
+        this.name=name;
+        iv.setText(name);
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-        outState.putInt(SELECTED_IMAGE, resID);
+        outState.putString(SELECTED_TAG, name);
         super.onSaveInstanceState(outState);
     }
 
@@ -28,17 +28,19 @@ public class Sponsor extends ActionBarActivity implements SponsorFragment.Callba
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sponsor);
-        iv= (ImageView) findViewById(R.id.sponsorImg);
+        iv= (TextView) findViewById(R.id.sponsorHead);
         sf = new SponsorFragment();
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, sf)
                     .commit();
+
         }
-        if (savedInstanceState != null && savedInstanceState.containsKey(SELECTED_IMAGE)) {
-            iv.setImageResource(savedInstanceState.getInt(SELECTED_IMAGE,resID));
+        if (savedInstanceState != null && savedInstanceState.containsKey(SELECTED_TAG)) {
+            name=savedInstanceState.getString(SELECTED_TAG);
         }
+        iv.setText(name);
     }
 
 
